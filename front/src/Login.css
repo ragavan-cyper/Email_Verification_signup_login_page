@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #000; /* full black background */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #000;
+}
+
+/* login Box */
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  height: 450px;
+  padding: 20px;
+  background: linear-gradient(135deg, #990b52, #146d96); /* smooth gradient */
+  border-radius: 15px;
+
+  /* soft shadow */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+  /* smooth animation for hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect – POP OUT */
+.login:hover {
+  transform: scale(1.03); /* little zoom */
+  box-shadow: 0 0 35px rgba(207, 8, 131, 0.6); /* neon cyan glow */
+}
+
+/* Inputs */
+.login input {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 50px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.login input:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Button */
+.login button {
+  height: 40px;
+  width: 200px;
+  margin: auto;
+  background-color: rgb(231, 2, 2);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.login button:hover {
+  background-color: rgb(13, 214, 13);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(13, 214, 13, 0.6);
+  color: #000;
+}
+
+.login span {
+  font-size: larger;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+  color: antiquewhite;
+}
+.login span:hover {
+  color: rgb(3, 22, 22);
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.error {
+  color: rgb(238, 231, 231);
+  background: #f70202;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 10px auto;
+  text-align: center;
+  width: 300px;
+}
+.success {
+  position: absolute;
+  top: 30px; /* show at top of screen */
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: #024731;
+  background: #8effc4;
+  border: 1px solid #02b35d;
+  padding: 10px;
+  border-radius: 8px;
+  width: 320px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 0 10px #02ffa6;
+
+  z-index: 9999; /* ← THIS IS THE MAIN FIX */
+}
+
+.link {
+  color: aliceblue;
+  text-decoration: none;
+}
+.link:hover {
+  color: #02ff17;
+}

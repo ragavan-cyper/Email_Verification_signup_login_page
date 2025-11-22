@@ -1,0 +1,84 @@
+body {
+  color: aliceblue;
+}
+
+.allfields {
+  display: block;
+  justify-content: space-between;
+  background-color: rgb(7, 7, 10);
+  height: fit-content;
+}
+
+.logo {
+  display: flex;
+  color: rgb(34, 31, 31);
+  justify-content: space-between;
+  background-color: rgb(236, 241, 238);
+  margin-top: 30px;
+  width: 98%;
+  margin-left: 10px;
+  height: 200px;
+  font-weight: 500;
+  padding: 20px;
+  border-radius: 42px 13px 65px 8px;
+  border: none;
+}
+
+.logo img {
+  width: 150px;
+  height: 100px;
+  padding: 10px;
+}
+
+.logo input {
+  height: 30px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  background-color: chartreuse;
+  text-align: center;
+}
+
+.logo button {
+  /* background-color: rgb(28, 94, 155); */
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 80px;
+}
+.sec {
+  background-color: rgb(228, 14, 96);
+  width: 98%;
+  margin-left: 10px;
+  height: 150px;
+  margin-top: 8px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 42px 13px 65px 8px;
+  border: none;
+}
+.features {
+  margin-top: 20px;
+  display: flex;
+}
+
+.cards {
+  height: 400px;
+  width: 400px;
+  margin-left: 100px;
+}
+
+.testinomal{
+   display: flex;
+   gap: 20px;
+    justify-content: center;
+    width: 100%;
+   
+}
+h2{
+    text-align: center;
+    background-color: azure;
+    color: black;
+    height: 80px;
+    padding: 10px;
+}
