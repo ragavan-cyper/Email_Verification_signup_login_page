@@ -51,8 +51,8 @@ function Verify() {
       return;
     }
 
-    setError(""); // clear error
-    setSuccess(""); //
+    setError(""); 
+    setSuccess(""); 
 
     try {
       const response = await axios.post(
